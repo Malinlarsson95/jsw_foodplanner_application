@@ -11,6 +11,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// skapa statisk sökväg
+app.use(express.static(path.join(__dirname, "public")));
+
 const db = require('./config/keys').mongoURI;
 
 // anslut till databasen
@@ -39,11 +42,6 @@ app.all("/*", function (req, res, next) {
   res.header("Access-Control-Allow-Methods", "GET,PUT,PATCH,POST,DELETE");
   next();
 });
-
-/*
-// skapa statisk sökväg
-app.use(express.static(path.join(__dirname, "public")));
-*/
 
 /*===CRUD för måltider===*/
 
