@@ -77,8 +77,9 @@ body {
   margin: 0.3% 0 0;
 }
 .iconsFoodplan {
+  width: 10%;
   position: relative;
-  left: 25%;
+  left: 65%;
   top: -23px;
 }
 .inputFoodplan {
@@ -137,9 +138,10 @@ input[type=text]:focus {
   margin: 2% 2% 0;
 }
 .iconsBuylist {
+  width: 10%;
   position: relative;
-  left: 14%;
-  top: -22px;
+  left: 60%;
+  top: -23px;
 }
 .inputBuyItem {
   width: 30%;
@@ -153,7 +155,7 @@ input[type=text]:focus {
 .buylistLi {
   border-top: #BEA574 solid 2px;
   border-bottom: #BEA574 solid 1px;
-  width: 35%;
+  width: 38%;
   margin: -11px auto;
   font-family: roboto, sans-serif;
   font-style: normal;
@@ -175,12 +177,12 @@ input[type=text]:focus {
     padding: 4%;
   }
   .iconsFoodplan {
-    left: 35%;
+    left: 75%;
     top: -28px;
     font-size: 1.4em;
   }
   .iconsBuylist {
-    left: 23%;
+    left: 65%;
     top: -23px;
     font-size: 1.4em;
   }
@@ -189,7 +191,7 @@ input[type=text]:focus {
     padding: 1%;
   }
   .buylistLi {
-    width: 35%;
+    width: 45%;
     margin: -16px auto;
   }
   .updateContentForm {
@@ -199,27 +201,30 @@ input[type=text]:focus {
 }
 @media only screen and (max-width: 600px) { 
   .iconsFoodplan {
-    left: 45%;
+    width: 15%;
+    left: 85%;
     top: -26px;
     font-size: 1.2em;
   }
   .iconsBuylist {
-    left: 35%;
-    top: -20px;
+    width: 15%;
+    left: 70%;
+    top: -24px;
     font-size: 1.2em;
   }
   .buylistLi {
-    width: 80%;
+    width: 65%;
     margin: -14px auto;
+    padding: 2% 0;
   }
 }
 @media only screen and (max-width: 430px) { 
   .iconsFoodplan {
-    left: 45%;
+    left: 88%;
     top: -26px;
   }
   .iconsBuylist {
-    left: 35%;
+    left: 70%;
     top: -20px;
   }
   .mealOutput {

@@ -20,7 +20,7 @@ export default function BuylistItem(props) {
           onClick={props.toggleChecked}
           style={{
             color: '#186720',
-            margin: '0 1% 0 0',
+            margin: '0 10% 0 0',
             cursor: 'pointer'
           }}></i>
         <i
