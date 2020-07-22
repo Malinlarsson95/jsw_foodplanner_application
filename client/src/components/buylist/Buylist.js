@@ -69,6 +69,18 @@ export default function Buylist() {
     });
   }
 
+  //Function to send put-request to API with Axio. Changes checked(boolean)
+  function putRequestAxios(url, item, bool) {
+    Axios.put(url, {
+      item: item,
+      checked: bool,
+    }).then(
+      (response) => { },
+      (error) => { }
+    );
+  }
+
+
   /*Delete an item from list by id*/
   function deleteBuyItem(_id) {
     let url = `/api/buylist/${_id}`;
@@ -88,17 +100,6 @@ export default function Buylist() {
           }
         }
       },
-      (error) => { }
-    );
-  }
-
-  //Function to send put-request to API with Axio. Changes checked(boolean)
-  function putRequestAxios(url, item, bool) {
-    Axios.put(url, {
-      item: item,
-      checked: bool,
-    }).then(
-      (response) => { },
       (error) => { }
     );
   }

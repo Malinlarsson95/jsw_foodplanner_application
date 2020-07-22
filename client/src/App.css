@@ -1,3 +1,4 @@
+/*RESET*/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -166,6 +167,7 @@ input[type=text]:focus {
 
 /*MEDIA QUERIES*/
 
+/*Medium screen size*/
 @media only screen and (max-width: 770px) {
   body {
     background-image: none;
@@ -199,6 +201,7 @@ input[type=text]:focus {
   }
   
 }
+/*Tablets and phones*/
 @media only screen and (max-width: 600px) { 
   .iconsFoodplan {
     width: 15%;
@@ -218,6 +221,7 @@ input[type=text]:focus {
     padding: 2% 0;
   }
 }
+/*Mobilephones*/
 @media only screen and (max-width: 430px) { 
   .iconsFoodplan {
     left: 88%;

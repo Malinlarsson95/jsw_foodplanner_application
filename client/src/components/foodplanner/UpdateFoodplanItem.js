@@ -11,7 +11,6 @@ export default function UpdateFoodplanItem(props) {
     function escapeBtn(event) {
         //prevents the page from reloading
         event.preventDefault();
-        console.log(event.target.value);
         let content = '';
         ReactDOM.render(content, document.getElementById('updateContainer'));
     }
@@ -25,7 +24,6 @@ export default function UpdateFoodplanItem(props) {
                 setAddPlanText('');
             }
         );
-        console.log('hej');
     }
     return (
         <div className="updateContent">

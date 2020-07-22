@@ -37,8 +37,6 @@ export default function Foodplanner() {
     const newFoodplan = foodplan.plans;
     let i = 0;
 
-    console.log('delete');
-
     Axios.delete(url).then(
       (response) => {
         //If delete-request suceeded update state.
