@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // skapa statisk sökväg
 //app.use(express.static(path.join(__dirname, "public")));
 
+// Hämta in anslutningssträng för databasen.
 const db = require('./config/keys').mongoURI;
 
 // anslut till databasen
